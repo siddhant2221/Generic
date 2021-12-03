@@ -1,0 +1,20 @@
+class Abc{
+  public <T> void func(T []arr){
+      for(T value:arr)
+      {
+          System.out.println(value);
+      }
+      System.out.println("");
+  }
+}
+public class Generic {
+    public static void main(String[] args) {
+        Integer[] marks = new Integer[]{76,23,24};
+        String[] marks2 = new String[]{"Ram","Shyam","Siddhant"};
+        Abc a = new Abc();
+        Abc b = new Abc();
+        a.<Integer>func(marks);
+        b.<String>func(marks2);
+
+    }
+ }
